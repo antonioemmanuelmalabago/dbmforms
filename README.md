@@ -4,7 +4,7 @@
 
 ## 📋 Overview
 
-DBM Forms Portal is a centralized form submission system for collecting and managing SRI and Gratuity Pay data for the Department of Budget and Management. This web application streamlines form submissions for employees of the Department of Budget and Management - Central Office.
+DBM Forms Portal is a web application designed to facilitate and manage form submissions of the employees of the Department of Budget and Management - Central Office. The existing form submission website is based on the PHP framework, whereas new applications are developed using modern web frameworks for improved development time, compatibility, and security. Also, the employees faced difficulty in finding the specific form links which consume more time than the procedure of filling up the forms. They are also responsible for multiple form submissions due to the lack of notification after successful submission and the inability to view previously submitted forms.
 
 ## 🎯 Objectives
 
