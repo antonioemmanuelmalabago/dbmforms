@@ -1,0 +1,11 @@
+.grid-divider {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.gratuity-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
