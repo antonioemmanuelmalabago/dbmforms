@@ -37,7 +37,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 Antonio Malabago
 - Website: [antoniomalabago.com](https://antoniomalabago.com)
-- LinkedIn: [https://www.linkedin.com/in/antonio-emmanuel-malabago](https://www.linkedin.com/in/antonio-emmanuel-malabago/)
+- LinkedIn: [linkedin.com/in/antonio-emmanuel-malabago](https://www.linkedin.com/in/antonio-emmanuel-malabago/)
 
 ## 🙏 Acknowledgments
 
