@@ -1,6 +1,11 @@
 # DBM Forms Portal
 
-![DBM Forms Portal](https://res.cloudinary.com/de86eimvq/image/upload/v1727172791/portfolio/Projects/dbmForms/images/dbm_1.png)
+<div style="overflow-x: auto; white-space: nowrap; padding: 10px 0;">
+  <img src="https://res.cloudinary.com/de86eimvq/image/upload/v1727172791/portfolio/Projects/dbmForms/images/dbm_1.png" alt="DBM Forms Portal 1" style="display: inline-block; height: 200px; margin-right: 10px;">
+  <img src="https://res.cloudinary.com/de86eimvq/image/upload/v1727172791/portfolio/Projects/dbmForms/images/dbm_2.png" alt="DBM Forms Portal 2" style="display: inline-block; height: 200px; margin-right: 10px;">
+  <img src="https://res.cloudinary.com/de86eimvq/image/upload/v1727172791/portfolio/Projects/dbmForms/images/dbm_3.png" alt="DBM Forms Portal 3" style="display: inline-block; height: 200px; margin-right: 10px;">
+  <img src="https://res.cloudinary.com/de86eimvq/image/upload/v1727172791/portfolio/Projects/dbmForms/images/dbm_4.png" alt="DBM Forms Portal 4" style="display: inline-block; height: 200px; margin-right: 10px;">
+</div>
 
 ## 📋 Overview
 
