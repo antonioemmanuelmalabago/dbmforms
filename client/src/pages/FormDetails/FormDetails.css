@@ -1,0 +1,48 @@
+.form-details {
+  width: 350px;
+}
+
+.form-details-title {
+  margin-bottom: 10px;
+}
+
+.data-field {
+  padding-right: 25px;
+  font-size: 0.9rem;
+}
+
+.data-value {
+  font-size: 0.9rem;
+}
+
+.column-title {
+  text-align: left;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+.file-links-list {
+  list-style: none;
+}
+
+.form-details-button {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.form-details-button button {
+  background-color: white;
+  border: none;
+  border: 1px solid #252525;
+  cursor: pointer;
+}
+
+.form-details-button button:hover {
+  color: white;
+  background-color: #252525;
+}

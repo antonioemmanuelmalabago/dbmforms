@@ -1,0 +1,68 @@
+.checkbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.checkbox-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.placeholder {
+  margin: 0;
+  color: #252525;
+  font-size: 0.8rem;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  text-wrap: nowrap;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}
+
+.terms-and-agreement {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.terms-and-agreement p {
+  margin: 0;
+  text-wrap: nowrap;
+}
+
+.terms-and-agreement input[type='checkbox'] {
+  margin: 0;
+  appearance: none;
+  height: 0.8rem;
+  width: 0.8rem;
+  border: 2px solid #c9c9c9;
+}
+
+.terms-and-agreement input[type='checkbox']:hover {
+  border-color: #5c5c5c;
+}
+
+.terms-and-agreement input[type='checkbox']:checked {
+  background-color: #252525;
+  border-color: #252525;
+}
+
+.error-info {
+  font-size: 0.6rem;
+  color: red;
+  font-style: italic;
+}
