@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import Header from '/src/components/Header/Header'
+import Header from '../../components/Header/Header'
 import './Dashboard.css'
-import Sidebar from '/src/components/Sidebar/Sidebar'
-import Card from '/src/components/Card/Card'
-import { useGetAllFormsQuery } from '/src/redux/slices/formApiSlice'
+import Sidebar from '../../components/Sidebar/Sidebar'
+import Card from '../../components/Card/Card'
+import { useGetAllFormsQuery } from '../../redux/slices/formApiSlice'
 import { useLocation } from 'react-router-dom'
-import Loader from '/src/components/Loader/Loader'
+import Loader from '../../components/Loader/Loader'
 
 const Dashboard = () => {
   const [formType, setFormType] = useState('')

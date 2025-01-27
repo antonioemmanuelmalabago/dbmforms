@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import banner from '/src/assets/banner.png'
+import banner from '../../assets/banner.png'
 import './Header.css'
 import Avatar from '../Avatar/Avatar'
 import { getInitials } from '../../utils/getInitials'

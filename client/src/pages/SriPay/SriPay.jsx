@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from '/src/components/Header/Header'
-import Sidebar from '/src/components/Sidebar/Sidebar'
-import SriForm from '/src/forms/SRIForm'
+import Header from '../../components/Header/Header'
+import Sidebar from '../../components/Sidebar/Sidebar'
+import SriForm from '../../forms/SRIForm'
 import './SriPay.css'
 
 const SriPay = () => {
