@@ -3,8 +3,8 @@ import './FormDetails.css'
 import {
   useGetSingleFormQuery,
   useUpdateFormStatusMutation,
-} from '../../redux/slices/formApiSlice'
-import Loader from '../../components/Loader/Loader'
+} from '/src/redux/slices/formApiSlice'
+import Loader from '/src/components/Loader/Loader'
 import { toast } from 'react-toastify'
 import { useLocation, useNavigate } from 'react-router-dom'
 

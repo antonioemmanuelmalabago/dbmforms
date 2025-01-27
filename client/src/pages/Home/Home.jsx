@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import dbmLogo from '/src/assets/dbm.png'
-import Login from '../../forms/Login'
-import Register from '../../forms/Register'
+import Login from '/src/forms/Login'
+import Register from '/src/forms/Register'
 import dbmFacade from '/src/assets/dbmFacade.jpg'
 import './Home.css'
 
