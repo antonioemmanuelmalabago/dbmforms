@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import dbmLogo from '../../assets/dbm.png'
+import dbmLogo from '../../images/dbm.png'
 import Login from '../../forms/Login'
 import Register from '../../forms/Register'
-import dbmFacade from '../../assets/dbmFacade.jpg'
+import dbmFacade from '../../images/dbmFacade.jpg'
 import './Home.css'
 
 const Homepage = () => {
