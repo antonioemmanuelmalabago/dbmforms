@@ -106,6 +106,21 @@ const gratuityFormSchema = mongoose.Schema(
       enum: ['Pending', 'Approved', 'Rejected'],
       default: 'Pending',
     },
+
+    // Form reject reason
+    reason: {
+      type: String,
+    },
+
+    // Form approver name
+    approverName: {
+      type: String,
+    },
+
+    // Form approver email
+    approverEmail: {
+      type: String,
+    },
   },
   { timestamps: true }
 )

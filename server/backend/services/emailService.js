@@ -2,7 +2,12 @@ import { createClient } from '@usewaypoint/client'
 import dotenv from 'dotenv'
 dotenv.config()
 
-export const sendEmail = async (template, email) => {
+export const sendEmail = async (template, email, emailData = {}) => {
+  const {
+    reason = 'Unavailable',
+    approverName = 'Unavailable',
+    approverEmail = 'Unavailable',
+  } = emailData
   let templateId
   switch (template) {
     case 'login':
@@ -36,5 +41,10 @@ export const sendEmail = async (template, email) => {
   await client.emailMessages.createTemplated({
     templateId: templateId,
     to: email,
+    variables: {
+      reason: reason,
+      approverName: approverName,
+      approverEmail: approverEmail,
+    },
   })
 }

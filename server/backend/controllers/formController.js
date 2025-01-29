@@ -170,7 +170,7 @@ const getForm = asyncHandler(async (req, res) => {
 // @access  Private
 const editFormStatus = asyncHandler(async (req, res) => {
   const { id } = req.params
-  const { status } = req.body
+  const { status, reason, approverName, approverEmail } = req.body
 
   const [sriResult, gratuityResult] = await Promise.all([
     SRIForm.findById(id),
@@ -192,12 +192,20 @@ const editFormStatus = asyncHandler(async (req, res) => {
 
   result.status = status
 
+  if (status === 'Rejected') {
+    result.reason = reason
+    result.approverName = approverName
+    result.approverEmail = approverEmail
+  }
+
   await result.save()
 
+  const emailData = { reason, approverName, approverEmail }
+
   if (status === 'Approved') {
-    sendEmail('request-approve', result.email)
+    sendEmail('request-approve', result.email, emailData)
   } else {
-    sendEmail('request-update', result.email)
+    sendEmail('request-update', result.email, emailData)
   }
 
   res.status(200).json({ form: result })

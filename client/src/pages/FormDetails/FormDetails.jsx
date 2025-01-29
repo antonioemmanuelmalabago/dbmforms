@@ -7,6 +7,9 @@ import {
 import Loader from '../../components/Loader/Loader'
 import { toast } from 'react-toastify'
 import { useLocation, useNavigate } from 'react-router-dom'
+import Modal from '../../components/Modal/Modal'
+import ConfirmReject from '../../components/ConfirmReject/ConfirmReject'
+import { useSelector } from 'react-redux'
 
 const FileList = ({ links }) => {
   return (
@@ -28,7 +31,9 @@ const FileList = ({ links }) => {
 }
 
 const FormDetails = ({ id, setModalStatus }) => {
+  const [isModalOpen, setModalState] = useState(false)
   const { data, isLoading } = useGetSingleFormQuery(id)
+  const [reason, setReason] = useState('')
 
   const navigate = useNavigate()
 
@@ -48,6 +53,10 @@ const FormDetails = ({ id, setModalStatus }) => {
     return `${date.toLocaleDateString()} ${date.toLocaleTimeString()}`
   }
 
+  const { userInfo } = useSelector((state) => state.auth)
+  const approverName = userInfo.name
+  const approverEmail = userInfo.email
+
   if (isLoading) {
     return <Loader />
   }
@@ -56,7 +65,10 @@ const FormDetails = ({ id, setModalStatus }) => {
 
   const handleUpdateStatus = async (status) => {
     try {
-      const result = await updateFormStatus({ id, data: { status } }).unwrap()
+      const result = await updateFormStatus({
+        id,
+        data: { status, reason, approverName, approverEmail },
+      }).unwrap()
       setModalStatus(false)
       toast.success(`Request ${status}`)
       setTimeout(() => {
@@ -96,12 +108,7 @@ const FormDetails = ({ id, setModalStatus }) => {
           <Loader />
         ) : (
           <div className="form-details-button">
-            <button
-              onClick={() => handleUpdateStatus('Rejected')}
-              disabled={isUpdating}
-            >
-              Reject
-            </button>
+            <button onClick={() => setModalState(true)}>Reject</button>
             <button
               onClick={() => handleUpdateStatus('Approved')}
               disabled={isUpdating}
@@ -111,6 +118,18 @@ const FormDetails = ({ id, setModalStatus }) => {
           </div>
         )}
       </div>
+      {isModalOpen ? (
+        <Modal setModalStatus={setModalState}>
+          <ConfirmReject
+            isUpdating={isUpdating}
+            handleUpdateStatus={handleUpdateStatus}
+            reason={reason}
+            setReason={setReason}
+          />
+        </Modal>
+      ) : (
+        <></>
+      )}
     </>
   )
 }
