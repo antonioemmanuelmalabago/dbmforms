@@ -30,8 +30,8 @@ DBM Forms is a centralized forms management system designed to streamline the su
 ## Contact
 
 Antonio Malabago  
-- Website: [antoniomalabago.com](https://antoniomalabago.com)  
-- LinkedIn: [linkedin.com/in/antonio-emmanuel-malabago](https://www.linkedin.com/in/antonio-emmanuel-malabago/)
+- Website: [https://antoniomalabago.com](https://antoniomalabago.com)  
+- LinkedIn: [https://linkedin.com/in/antonio-emmanuel-malabago](https://www.linkedin.com/in/antonio-emmanuel-malabago/)
 
 ## Acknowledgments
 
