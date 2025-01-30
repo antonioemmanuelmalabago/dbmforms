@@ -37,7 +37,7 @@ Antonio Malabago
 - Website: [https://antoniomalabago.com](https://antoniomalabago.com)  
 - LinkedIn: [https://linkedin.com/in/antonio-emmanuel-malabago](https://www.linkedin.com/in/antonio-emmanuel-malabago/)
 
-## Acknowledgments
+## Acknowledgements
 
 - Department of Budget and Management
 - Pamantasan ng Lungsod ng Maynila
