@@ -7,8 +7,8 @@ import { getInitials } from '../../utils/getInitials'
 
 const Header = () => {
   const { userInfo } = useSelector((state) => state.auth)
-  const firstName = userInfo ? userInfo.name.split(' ')[0] : 'Guest'
-  const initials = userInfo ? getInitials(userInfo.name) : ''
+  const firstName = userInfo.name.split(' ')[0]
+  const initials = getInitials(userInfo.name)
 
   return (
     <div className="header-wrapper">
