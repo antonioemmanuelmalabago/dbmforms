@@ -4,11 +4,11 @@
 
 ## Live Demo
 
-View live website at [https://dbmforms.onrender.com](https://dbmforms.onrender.com)
+Access live website at [https://dbmforms.onrender.com](https://dbmforms.onrender.com)
 
 ### Overview
 
-DBM Forms is a centralized forms management system designed to streamline the submission, management, and approval of incentive-realted reports used within the Department of Budget and Management (DBM). Developed during internship, the web application simplifies the collection and management of multiple forms with a centralized platform that enhances efficiency and user experience of employees. The system includes role-based access control and automated email notifications to accommodate various government processes.
+DBM Forms is a centralized forms management system designed to streamline the submission, management, and approval of incentive-related reports for the employees of the Department of Budget and Management (DBM). This web application simplifies the collection and management of multiple forms within a centralized platform, improving the efficiency and user experience of employees. It has role-based access control and automated email notifications to accommodate various government processes.
 
 ### Objectives
 
@@ -26,13 +26,11 @@ DBM Forms is a centralized forms management system designed to streamline the su
 
 ### Features
 
-- Role-based access control (Approver and employee)
-- Digital form submission and tracking
-- Automated email notifications for approvals and rejections
-- Secure authentication and authorization
+- Role-based access control (approver and employee).
+- Digital form submission and tracking.
+- Automated email notifications for approvals and rejections.
+- Secure authentication and authorization.
 
 ### Acknowledgements
 
 - Department of Budget and Management
-- Pamantasan ng Lungsod ng Maynila
-
