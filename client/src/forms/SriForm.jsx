@@ -280,7 +280,7 @@ const SRIForm = () => {
             placeholder="Choose a file..."
             onChange={handleFileChange}
             fileCount={files.length}
-            required={true}
+            required={false}
             multiple={true}
           />
         </section>
