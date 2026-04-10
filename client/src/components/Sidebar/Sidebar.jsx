@@ -10,6 +10,8 @@ import { usersApiSlice } from '../../redux/slices/usersApiSlice'
 const adminMenu = [
   { title: 'Dashboard', path: '/dashboard', icon: <MdDashboard /> },
   { title: 'History', path: '/history', icon: <FaHistory /> },
+  { title: 'SRI Pay', path: '/sri', icon: <FaArrowTrendUp /> },
+  { title: 'Gratuity Pay', path: '/gratuity', icon: <FaCoins /> },
 ]
 
 const employeeMenu = [
