@@ -34,3 +34,10 @@ DBM Forms is a centralized forms management system designed to streamline the su
 ### Acknowledgements
 
 - Department of Budget and Management
+
+### Updates
+
+#### 04/10/26
+- Served React build as static files from Express so both FE and BE run on same domain.
+- Migrated from Firebase to Cloudinary. Access to Firebase bucket now requires subscription.
+- Improved role-based access control for admin and non-admin users.
