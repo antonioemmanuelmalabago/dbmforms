@@ -21,7 +21,7 @@ DBM Forms is a centralized forms management system designed to streamline the su
 
 - **Frontend:** React, CSS, JavaScript
 - **Backend:** Express, NodeJS
-- **Database:** MongoDB, Firebase
+- **Database:** MongoDB, Cloudinary
 - **Tools:** VS Code, Postman
 
 ### Features

@@ -54,7 +54,7 @@ const SRIForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault()
 
-    // Upload files in Firebase
+    // Upload files in Cloudinary
     setIsLoading(true)
     const uploadPromises = Array.from(files).map((file) => uploadFile(file))
     const uploadedLinks = await Promise.all(uploadPromises)
