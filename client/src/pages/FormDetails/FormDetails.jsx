@@ -104,19 +104,20 @@ const FormDetails = ({ id, setModalStatus }) => {
               </tr>
             ))}
         </table>
-        {isUpdating ? (
-          <Loader />
-        ) : (
-          <div className="form-details-button">
-            <button onClick={() => setModalState(true)}>Reject</button>
-            <button
-              onClick={() => handleUpdateStatus('Approved')}
-              disabled={isUpdating}
-            >
-              Approve
-            </button>
-          </div>
-        )}
+        {userInfo.isAdmin &&
+          (isUpdating ? (
+            <Loader />
+          ) : (
+            <div className="form-details-button">
+              <button onClick={() => setModalState(true)}>Reject</button>
+              <button
+                onClick={() => handleUpdateStatus('Approved')}
+                disabled={isUpdating}
+              >
+                Approve
+              </button>
+            </div>
+          ))}
       </div>
       {isModalOpen ? (
         <Modal setModalStatus={setModalState}>
